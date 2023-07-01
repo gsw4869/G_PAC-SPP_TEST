@@ -4,7 +4,7 @@ project(cuda-ldpc VERSION 0.1.0)
 # set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c11") set(CMAKE_CXX_FLAGS
 # "${CMAKE_CXX_FLAGS} -std=c++11")
 set(CUDA_NVCC_FLAGS "-ccbin gcc-7")
-set(CMAKE_CUDA_COMPILER "/usr/local/cuda/bin/nvcc")
+set(CMAKE_CUDA_COMPILER "/usr/local/cuda-11.2/bin/nvcc")
 enable_language(CUDA)
 find_package(CUDA REQUIRED)
 include_directories(${CUDA_INCLUDE_DIRS})
